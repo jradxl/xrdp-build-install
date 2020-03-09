@@ -1,0 +1,18 @@
+[Unit]
+Description=Custom XRDP daemon
+Documentation=man:xrdp(8) man:xrdp.ini(5)
+Requires=xrdp-sesman.service
+After=network.target xrdp-sesman.service
+
+[Service]
+RuntimeDirectory=xrdp
+ExecStartPre=/usr/local/etc/xrdp/prepare-environment
+User=xrdp
+Group=xrdp
+PermissionsStartOnly=true
+ExecStart=/usr/local/sbin/xrdp --nodaemon
+ExecStop=/usr/local/sbin/xrdp --kill
+
+[Install]
+WantedBy=multi-user.target
+

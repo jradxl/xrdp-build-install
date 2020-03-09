@@ -1,0 +1,68 @@
+#!/usr/bin/env bash
+
+set -ue
+
+#Run as ROOT
+case $(id -u) in
+(0) ;;
+(*)
+	echo >&2 "E: need root"
+	exit 4
+	;;
+esac
+
+. /usr/local/etc/xrdp/envvars
+#. ./envvars
+
+##Create User if not exists
+getent passwd xrdp >/dev/null 2>&1 || adduser \
+            --quiet --system --group --no-create-home \
+            --disabled-password --disabled-login \
+            --home $HOME xrdp
+
+## NOTE
+# xrdp creates it's own run sub-dir, but xrdp-sesman does not.
+# so to ensure xrdp-sesman starts on it's own (while testing)
+# we pre-create the run dir, thus: /run/xrdp/run
+# then both pid files will be created in this path
+
+if [ ! -d $HOME/run ]; then
+    echo "Creating $HOME/run"
+    mkdir --parents $HOME/run
+fi
+chown -R xrdp:xrdp $HOME
+chmod 2775 $HOME
+
+if [ ! -d $HOME/sockdir ]; then
+    echo "Creating socket $HOME/sockdir"
+    mkdir --parents $HOME/sockdir
+fi
+chown root:xrdp $HOME/sockdir
+chmod 3777 $HOME/sockdir
+
+if [ ! -d $XRDP_LOG_DIR ]; then
+    echo "Creating log directory $XRDP_LOG_DIR"
+    mkdir --parents "$XRDP_LOG_DIR";
+fi
+chown -R xrdp:xrdp $XRDP_LOG_DIR
+
+chown xrdp:xrdp /usr/local/etc/xrdp/rsakeys.ini
+chown xrdp:xrdp /usr/local/etc/xrdp/cert.pem
+chown xrdp:xrdp /usr/local/etc/xrdp/key.pem
+
+#Xrdp creates it's own logfile
+
+#if [ ! -f  $XRDP_LOG_DIR/$XRDP_LOG_FILE ]; then
+#    touch $XRDP_LOG_DIR/$XRDP_LOG_FILE   
+#    chown xrdp:adm $XRDP_LOG_DIR/$XRDP_LOG_FILE
+#    chmod 0640 $XRDP_LOG_DIR/$XRDP_LOG_FILE
+#fi
+
+#if [ ! -f $XRDP_LOG_DIR/$XRDP_SESMAN_LOG_FILE ]; then
+#    touch $XRDP_LOG_DIR/$XRDP_SESMAN_LOG_FILE
+#    chown root:adm $XRDP_LOG_DIR/$XRDP_SESMAN_LOG_FILE
+#    chmod 0640 $XRDP_LOG_DIR/$XRDP_SESMAN_LOG_FILE    
+#fi
+
+exit 0
+

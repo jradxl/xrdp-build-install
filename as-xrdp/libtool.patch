@@ -1,0 +1,43 @@
+--- libtool-orig	2020-03-08 15:12:48.227021714 +0000
++++ libtool	2020-03-08 15:13:24.985748656 +0000
+@@ -356,11 +356,11 @@
+ old_archive_from_expsyms_cmds=""
+ 
+ # Commands used to build a shared archive.
+-archive_cmds="\$CC -shared \$pic_flag \$libobjs \$deplibs \$compiler_flags \$wl-soname \$wl\$soname -o \$lib"
++archive_cmds="\$CC -Wl,-O1,--as-needed -shared  \$pic_flag \$libobjs \$deplibs \$compiler_flags \$wl-soname \$wl\$soname -o \$lib"
+ archive_expsym_cmds="echo \\\"{ global:\\\" > \$output_objdir/\$libname.ver~
+             cat \$export_symbols | sed -e \\\"s/\\\\(.*\\\\)/\\\\1;/\\\" >> \$output_objdir/\$libname.ver~
+             echo \\\"local: *; };\\\" >> \$output_objdir/\$libname.ver~
+-            \$CC -shared \$pic_flag \$libobjs \$deplibs \$compiler_flags \$wl-soname \$wl\$soname \$wl-version-script \$wl\$output_objdir/\$libname.ver -o \$lib"
++            \$CC -Wl,-O1,--as-needed -shared  \$pic_flag \$libobjs \$deplibs \$compiler_flags \$wl-soname \$wl\$soname \$wl-version-script \$wl\$output_objdir/\$libname.ver -o \$lib"
+ 
+ # Commands used to build a loadable module if different from building
+ # a shared archive.
+@@ -4235,7 +4235,7 @@
+   -no-suppress      do not suppress compiler output for multiple passes
+   -prefer-pic       try to build PIC objects only
+   -prefer-non-pic   try to build non-PIC objects only
+-  -shared           do not build a '.o' file suitable for static linking
++  -Wl,-O1,--as-needed -shared            do not build a '.o' file suitable for static linking
+   -static           only build a '.o' file suitable for static linking
+   -Wc,FLAG          pass FLAG directly to the compiler
+ 
+@@ -4333,7 +4333,7 @@
+   -release RELEASE  specify package release information
+   -rpath LIBDIR     the created library will eventually be installed in LIBDIR
+   -R[ ]LIBDIR       add LIBDIR to the runtime path of programs and libraries
+-  -shared           only do dynamic linking of libtool libraries
++  -Wl,-O1,--as-needed -shared            only do dynamic linking of libtool libraries
+   -shrext SUFFIX    override the standard shared library file extension
+   -static           do not do any dynamic linking of uninstalled libtool libraries
+   -static-libtool-libs
+@@ -7754,7 +7754,7 @@
+ 	;;
+ 
+       -shared)
+-	# The effects of -shared are defined in a previous loop.
++	# The effects of -Wl,-O1,--as-needed -shared  are defined in a previous loop.
+ 	continue
+ 	;;
+ 

@@ -1,0 +1,8 @@
+##Environmental variables for xrdp.service
+USER=xrdp
+HOME=/run/xrdp
+
+XRDP_LOG_DIR=/var/log/xrdp
+XRDP_LOG_FILE=xrdp.log
+XRDP_SESMAN_LOG_FILE=xrdp-sesman.log
+

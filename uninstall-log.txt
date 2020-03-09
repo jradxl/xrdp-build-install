@@ -1,0 +1,155 @@
+radley@z390ma:~/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12$ sudo make uninstall
+[sudo] password for jradley: 
+Making uninstall in common
+make[1]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/common'
+ ( cd '/usr/local/include' && rm -f xrdp_client_info.h xrdp_constants.h xrdp_rail.h xrdp_sockets.h )
+ /bin/bash ../libtool   --mode=uninstall rm -f '/usr/local/lib/xrdp/libcommon.la'
+libtool: uninstall: rm -f /usr/local/lib/xrdp/libcommon.la /usr/local/lib/xrdp/libcommon.so.0.0.0 /usr/local/lib/xrdp/libcommon.so.0 /usr/local/lib/xrdp/libcommon.so /usr/local/lib/xrdp/libcommon.a
+make[1]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/common'
+Making uninstall in vnc
+make[1]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/vnc'
+ /bin/bash ../libtool   --mode=uninstall rm -f '/usr/local/lib/xrdp/libvnc.la'
+libtool: uninstall: rm -f /usr/local/lib/xrdp/libvnc.la /usr/local/lib/xrdp/libvnc.so /usr/local/lib/xrdp/libvnc.so /usr/local/lib/xrdp/libvnc.so /usr/local/lib/xrdp/libvnc.a
+make[1]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/vnc'
+Making uninstall in xup
+make[1]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/xup'
+ /bin/bash ../libtool   --mode=uninstall rm -f '/usr/local/lib/xrdp/libxup.la'
+libtool: uninstall: rm -f /usr/local/lib/xrdp/libxup.la /usr/local/lib/xrdp/libxup.so /usr/local/lib/xrdp/libxup.so /usr/local/lib/xrdp/libxup.so /usr/local/lib/xrdp/libxup.a
+make[1]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/xup'
+Making uninstall in mc
+make[1]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/mc'
+ /bin/bash ../libtool   --mode=uninstall rm -f '/usr/local/lib/xrdp/libmc.la'
+libtool: uninstall: rm -f /usr/local/lib/xrdp/libmc.la /usr/local/lib/xrdp/libmc.so /usr/local/lib/xrdp/libmc.so /usr/local/lib/xrdp/libmc.so /usr/local/lib/xrdp/libmc.a
+make[1]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/mc'
+Making uninstall in libxrdp
+make[1]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/libxrdp'
+ /bin/bash ../libtool   --mode=uninstall rm -f '/usr/local/lib/xrdp/libxrdp.la'
+libtool: uninstall: rm -f /usr/local/lib/xrdp/libxrdp.la /usr/local/lib/xrdp/libxrdp.so.0.0.0 /usr/local/lib/xrdp/libxrdp.so.0 /usr/local/lib/xrdp/libxrdp.so /usr/local/lib/xrdp/libxrdp.a
+make[1]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/libxrdp'
+Making uninstall in libpainter
+make[1]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/libpainter'
+Making uninstall in src
+make[2]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/libpainter/src'
+ /bin/bash ../libtool   --mode=uninstall rm -f '/usr/local/lib/libpainter.la'
+libtool: uninstall: rm -f /usr/local/lib/libpainter.la /usr/local/lib/libpainter.so.0.0.0 /usr/local/lib/libpainter.so.0 /usr/local/lib/libpainter.so /usr/local/lib/libpainter.a
+make[2]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/libpainter/src'
+Making uninstall in include
+make[2]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/libpainter/include'
+ ( cd '/usr/local/include' && rm -f painter.h )
+make[2]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/libpainter/include'
+Making uninstall in pkgconfig
+make[2]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/libpainter/pkgconfig'
+ ( cd '/usr/local/lib/pkgconfig' && rm -f libpainter.pc )
+make[2]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/libpainter/pkgconfig'
+make[2]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/libpainter'
+make[2]: Nothing to be done for 'uninstall-am'.
+make[2]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/libpainter'
+make[1]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/libpainter'
+Making uninstall in librfxcodec
+make[1]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/librfxcodec'
+Making uninstall in include
+make[2]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/librfxcodec/include'
+ ( cd '/usr/local/include' && rm -f rfxcodec_encode.h rfxcodec_decode.h rfxcodec_common.h )
+make[2]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/librfxcodec/include'
+Making uninstall in src
+make[2]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/librfxcodec/src'
+Making uninstall in amd64
+make[3]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/librfxcodec/src/amd64'
+make[3]: Nothing to be done for 'uninstall'.
+make[3]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/librfxcodec/src/amd64'
+make[3]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/librfxcodec/src'
+ /bin/bash ../libtool   --mode=uninstall rm -f '/usr/local/lib/librfxencode.la'
+libtool: uninstall: rm -f /usr/local/lib/librfxencode.la /usr/local/lib/librfxencode.so.0.0.0 /usr/local/lib/librfxencode.so.0 /usr/local/lib/librfxencode.so /usr/local/lib/librfxencode.a
+make[3]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/librfxcodec/src'
+make[2]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/librfxcodec/src'
+Making uninstall in tests
+make[2]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/librfxcodec/tests'
+make[2]: Nothing to be done for 'uninstall'.
+make[2]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/librfxcodec/tests'
+make[2]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/librfxcodec'
+ ( cd '/usr/local/lib/pkgconfig' && rm -f rfxcodec.pc )
+make[2]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/librfxcodec'
+make[1]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/librfxcodec'
+Making uninstall in xrdp
+make[1]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/xrdp'
+ ( cd '/usr/local/share/xrdp' && rm -f ad24b.bmp ad256.bmp xrdp24b.bmp xrdp256.bmp xrdp_logo.bmp sans-10.fv1 cursor0.cur cursor1.cur )
+ ( cd '/usr/local/etc/xrdp' && rm -f xrdp.ini xrdp_keyboard.ini )
+ ( cd '/usr/local/sbin' && rm -f xrdp )
+make[1]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/xrdp'
+Making uninstall in sesman
+make[1]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/sesman'
+Making uninstall in libscp
+make[2]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/sesman/libscp'
+ /bin/bash ../../libtool   --mode=uninstall rm -f '/usr/local/lib/xrdp/libscp.la'
+libtool: uninstall: rm -f /usr/local/lib/xrdp/libscp.la /usr/local/lib/xrdp/libscp.so.0.0.0 /usr/local/lib/xrdp/libscp.so.0 /usr/local/lib/xrdp/libscp.so /usr/local/lib/xrdp/libscp.a
+make[2]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/sesman/libscp'
+Making uninstall in tools
+make[2]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/sesman/tools'
+ ( cd '/usr/local/bin' && rm -f xrdp-sesrun xrdp-sesadmin xrdp-dis )
+make[2]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/sesman/tools'
+Making uninstall in chansrv
+make[2]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/sesman/chansrv'
+ ( cd '/usr/local/sbin' && rm -f xrdp-chansrv )
+make[2]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/sesman/chansrv'
+make[2]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/sesman'
+ ( cd '/usr/local/etc/xrdp' && rm -f sesman.ini )
+ ( cd '/usr/local/etc/xrdp' && rm -f startwm.sh reconnectwm.sh )
+ ( cd '/usr/local/sbin' && rm -f xrdp-sesman )
+make[2]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/sesman'
+make[1]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/sesman'
+Making uninstall in keygen
+make[1]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/keygen'
+ ( cd '/usr/local/bin' && rm -f xrdp-keygen )
+make  uninstall-hook
+make[2]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/keygen'
+rm -f /usr/local/etc/xrdp/rsakeys.ini
+rm -f /usr/local/etc/xrdp/cert.pem
+rm -f /usr/local/etc/xrdp/key.pem
+make[2]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/keygen'
+make[1]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/keygen'
+Making uninstall in docs
+make[1]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/docs'
+Making uninstall in man
+make[2]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/docs/man'
+ ( cd '/usr/local/share/man/man1' && rm -f xrdp-dis.1 )
+ ( cd '/usr/local/share/man/man5' && rm -f sesman.ini.5 xrdp.ini.5 )
+ ( cd '/usr/local/share/man/man8' && rm -f xrdp.8 xrdp-chansrv.8 xrdp-genkeymap.8 xrdp-keygen.8 xrdp-sesadmin.8 xrdp-sesman.8 xrdp-sesrun.8 )
+make[2]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/docs/man'
+make[2]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/docs'
+make[2]: Nothing to be done for 'uninstall-am'.
+make[2]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/docs'
+make[1]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/docs'
+Making uninstall in instfiles
+make[1]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/instfiles'
+Making uninstall in pam.d
+make[2]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/instfiles/pam.d'
+ ( cd '/usr/local/etc/pam.d' && rm -f xrdp-sesman )
+make[2]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/instfiles/pam.d'
+Making uninstall in pulse
+make[2]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/instfiles/pulse'
+ ( cd '/usr/local/etc/xrdp/pulse' && rm -f default.pa )
+make[2]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/instfiles/pulse'
+make[2]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/instfiles'
+ ( cd '/usr/local/etc/xrdp' && rm -f km-00000406.ini km-00000407.ini km-00000409.ini km-0000040a.ini km-0000040b.ini km-0000040c.ini km-00000410.ini km-00000411.ini km-00000412.ini km-00000414.ini km-00000415.ini km-00000416.ini km-00000419.ini km-0000041d.ini km-00000807.ini km-00000809.ini km-0000080a.ini km-0000080c.ini km-00000813.ini km-00000816.ini km-0000100c.ini km-00010409.ini )
+ ( cd './systemd-ref' && rm -f xrdp-sesman.service xrdp.service )
+make[2]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/instfiles'
+make[1]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/instfiles'
+Making uninstall in genkeymap
+make[1]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/genkeymap'
+ ( cd '/usr/local/bin' && rm -f xrdp-genkeymap )
+make[1]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/genkeymap'
+Making uninstall in xrdpapi
+make[1]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/xrdpapi'
+ /bin/bash ../libtool   --mode=uninstall rm -f '/usr/local/lib/xrdp/libxrdpapi.la'
+libtool: uninstall: rm -f /usr/local/lib/xrdp/libxrdpapi.la /usr/local/lib/xrdp/libxrdpapi.so.0.0.0 /usr/local/lib/xrdp/libxrdpapi.so.0 /usr/local/lib/xrdp/libxrdpapi.so /usr/local/lib/xrdp/libxrdpapi.a
+make[1]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/xrdpapi'
+Making uninstall in pkgconfig
+make[1]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/pkgconfig'
+ ( cd '/usr/local/lib/pkgconfig' && rm -f xrdp.pc )
+make[1]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/pkgconfig'
+make[1]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12'
+make[1]: Nothing to be done for 'uninstall-am'.
+make[1]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12'
+jradley@z390ma:~/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12$ 
+
+
