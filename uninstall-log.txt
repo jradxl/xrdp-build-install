@@ -1,4 +1,7 @@
-radley@z390ma:~/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12$ sudo make uninstall
+Just a capture of "sudo make uninstall" so to see what Xrdp installs and removes!
+
+
+
 [sudo] password for jradley: 
 Making uninstall in common
 make[1]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12/common'
@@ -150,6 +153,6 @@ make[1]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-instal
 make[1]: Entering directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12'
 make[1]: Nothing to be done for 'uninstall-am'.
 make[1]: Leaving directory '/home/jradley/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12'
-jradley@z390ma:~/Documents/xrdp-build/xrdp-build-install/as-xrdp/xrdp-0.9.12$ 
+
 
 
