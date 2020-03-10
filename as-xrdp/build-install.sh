@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-set -eu
+#Use set -ue when debugging
+set -u
 
 ## Enter the version to be used
 XRDP_SOURCE=xrdp-0.9.12.tar.gz
@@ -134,28 +135,7 @@ sudo cp ./envvars              /usr/local/etc/xrdp/
 #Created automatically
 #sudo cp ./xorg.conf            /etc/X11/xrdp/xorg.conf
 
-# Generate RDP security keys
-if [ ! -f /usr/local/etc/xrdp/rsakeys.ini ]; then
-    echo "Creating xRDP security key"
-	umask 077
-	xrdp-keygen xrdp auto
-fi
-sudo chown xrdp /usr/local/etc/xrdp/rsakeys.ini
-
-# Generate/copy snakeoil X509 certificate and key
-if [ ! -f  /usr/local/etc/xrdp/cert.pem ]; then
-    echo "Creating snakeoil certificate key"
-    if [ ! -f /etc/ssl/certs/ssl-cert-snakeoil.pem ]; then
-	    make-ssl-cert generate-default-snakeoil
-	fi
-	#Linking does not work!
-	cp /etc/ssl/certs/ssl-cert-snakeoil.pem   /usr/local/etc/xrdp/cert.pem
-	cp /etc/ssl/private/ssl-cert-snakeoil.key /usr/local/etc/xrdp/key.pem
-fi
-chown xrdp:xrdp /usr/local/etc/xrdp/cert.pem
-chown xrdp:xrdp /usr/local/etc/xrdp/key.pem
-
-#Must be run prior to running xrdp on command-line or
+#Must be run prior to running xrdp on command-line
 #and is run by systemctl start xrdp
 sudo ./prepare-environment
 
